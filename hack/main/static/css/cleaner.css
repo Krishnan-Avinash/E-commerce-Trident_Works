@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.93);
+}
+.top{
+    width: fit-content;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 25px;
+    width: fit-content;
+    /* justify-content: start; */
+    /* position: absolute;
+    left: 100px;
+    top: 40px; */
+}
+.prev-page{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color:#fe894a;
+    font-weight: 900;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px solid black;
+}
+.cleaners-first-row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 500px;
+    height: 32%;
+    width: 80%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: space-around;
+    /* gap: 30px; */
+    /* border: 1px solid black; */
+    margin-top: 50px;
+}
+.cleaner-1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    height: 100%;
+    width: 48%;   
+    box-shadow: 0 0 50px #fe894a;
+}
+.cleaner-2{
+    box-shadow: 0 0 50px #fe894a;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 48%;    
+}
+.name{
+    font-size: 3rem;
+    color: #fe894a;
+    font-weight: 900;
+}
+.age,.state,.rating{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.age span,.state span,.rating span{
+    color: #fe894a;
+    font-weight: 900;
+}
+.contact{
+    height: 50px;
+    width: 190px;
+    border: none;
+    border-radius: 15px;
+    background-color:#fe894a;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+}
+.contact:hover{
+    transform: scale(1.1);
+    background-color:#6e3b1f;
+}
+.cleaner-left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cleaners-second-row{
+    /* margin-top: 500px; */
+    height: 32%;
+    width: 80%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: space-around;
+    /* gap: 30px; */
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}

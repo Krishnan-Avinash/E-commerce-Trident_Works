@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/Login.css' %}">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="container">
+        <main class="newnew">
+            <div class="company-logo">
+                    <img src="logo_favicontoo.png" alt="Error" width="650px" class="imag-co">
+            </div>
+            <div class="login-container">
+                <div class="top">
+                    👋Welcome Back
+                </div>
+                <form class="all-container" method="POST">
+                    {% csrf_token %}
+                    <div class="second">
+                        <p class="texts">Username</p>
+                        <input type="text" name="username" id="mailid" placeholder="Enter your Username" required>
+                        <p class="pwd">Password</p>
+                        <input type="password" name="password" id="passwd" placeholder="Enter your Password" required>
+                        <br>
+                        <input type="checkbox" class="check-pass">
+                        <span class="showp">Show Password</span>
+                        <a href="{% url 'register' %}" class="dont-have-account">
+                            <div>Don't have an account</div>
+                        </a>
+                        <input type="submit" class="submit-btn">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script_Login_Page.js"></script>
+</body>
+</html>

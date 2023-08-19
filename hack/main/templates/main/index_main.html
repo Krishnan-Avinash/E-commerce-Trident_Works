@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index_html.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="first-tab">
+            <div class="first-left-tab">
+                <img src="logo_favicontoo_copy.png" alt="Error" class="logo-imag">
+            </div>
+            <div class="first-right-tab">
+                <a href="index.html">
+                    <div class="home">Home</div>
+                </a>
+                <div class="about">About</div>
+                <a href="Login_page.html">
+                    <button class="sign-in">Sign in</button>
+                </a>
+                <a href="Signup_page.html">
+                    <button class="sign-up">Sign up</button>
+                </a>
+            </div>
+        </header>
+        <main class="second-tab">
+            <div class="first-main">
+                <div class="imag-background">
+                    <img src="logo_favicontoo_copy.png" alt="Error" class="imag_bg">
+                    <div class='console-container'>
+                        <span id='text'></span>
+                        <div class='console-underscore' id='console'>|</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="tytytyty">
+            <main class="text-head-">All Our Services</main>
+            <main class="third-tab">
+                <a href="{% url 'main:cleaner' %}">
+                    <main class="hexagon first-hex">
+                        <div class=""></div>
+                        <div>
+                            <span class="overlay">Cleaner</span>
+                        </div>
+                        <!-- <div class="hexagon"></div> -->
+                    </main>
+                </a>
+                <a href="Cook.html">
+                    <main class="hexagon second-hex">
+                        <div class=""></div>
+                        <div>
+                            <span class="overlay">Cook <span> (<span>4</span>)</span></span>
+                        </div>
+                        <!-- <div class="hexagon"></div> -->
+                    </main>
+                </a>
+                <a href="Plumber.html">
+                    <main class="hexagon third-hex">
+                        <div class=""></div>
+                        <div>
+                            <span class="overlay">Plumber</span>
+                        </div>
+                        <!-- <div class="hexagon"></div> -->
+                    </main>
+                </a>
+            </main>
+            <main class="forth-tab">
+                <a href="Electrician.html">
+                    <main class="hexagon forth-hex">
+                        <div class=""></div>
+                        <div>
+                            <span class="overlay">Electrician</span>
+                        </div>
+                        <!-- <div class="hexagon"></div> -->
+                    </main>
+                </a>
+                <a href="carpenter.html">
+                    <main class="hexagon fifth-hex">
+                        <div class=""></div>
+                        <div>
+                            <span class="overlay">Carpenter</span>
+                        </div>
+                        <!-- <div class="hexagon"></div> -->
+                    </main>
+                </a>
+                
+            </main>
+            
+        </main>
+    </div>
+    
+    
+    <span class="cont2"></span>
+    <script src="script.js"></script>
+</body>
+</html>
