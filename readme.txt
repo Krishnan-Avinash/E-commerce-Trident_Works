@@ -1,3 +1,5 @@
-We've accomplished the frontend and backend components of our project. Currently, we're in the process of integrating them. By midnight, we'll have the core structure of the site ready. We're also implementing facial recognition and OTP for worker registration. Once the core structure is complete, we'll focus on refining and fully developing the site to prepare for our presentation. We're aiming to wrap everything up by morning.
+1. Clone this repository to your Local Host. 
+2. Go to cmd prompt and type- python manage.py runserver
+3. Go to the local host website and HAVE FUN !!
 
-The main website is located in index.html in customer file
+Made with ❤️ by TEAM SYSTUMM
